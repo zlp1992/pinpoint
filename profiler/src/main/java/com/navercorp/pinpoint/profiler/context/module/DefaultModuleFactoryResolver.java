@@ -25,6 +25,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Constructor;
 
 /**
+ * 默认的模块依赖（guice）工厂解析
  * @author Taejin Koo
  */
 public class DefaultModuleFactoryResolver implements ModuleFactoryResolver {
@@ -32,6 +33,7 @@ public class DefaultModuleFactoryResolver implements ModuleFactoryResolver {
     private static final String DEFAULT_MODULE_FACTORY = ApplicationContextModuleFactory.class.getName();
     private final Logger logger = LoggerFactory.getLogger(DefaultModuleFactoryResolver.class);
 
+    /**模块依赖工厂类名*/
     private final String moduleFactoryClazzName;
 
 

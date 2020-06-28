@@ -1,6 +1,7 @@
 package com.navercorp.pinpoint.bootstrap;
 
 /**
+ * java9特性
  * @author Woonduk Kang(emeroad)
  */
 final class ModuleUtils {

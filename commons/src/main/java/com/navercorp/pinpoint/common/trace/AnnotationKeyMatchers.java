@@ -18,6 +18,7 @@ package com.navercorp.pinpoint.common.trace;
 import com.navercorp.pinpoint.common.util.AnnotationKeyUtils;
 
 /**
+ * annotation-key匹配，这个类有点类似factory模式
  * @author Jongho Moon
  *
  */

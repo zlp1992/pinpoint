@@ -22,5 +22,10 @@ import java.util.Properties;
  * @author Woonduk Kang(emeroad)
  */
 public interface PropertyLoader {
+    /**
+     * 解析启动配置文件
+     * 首先解析 pinpoint.config；
+     * 再解析指定profile下的 pinpoint-en.config
+     * */
     Properties load();
 }

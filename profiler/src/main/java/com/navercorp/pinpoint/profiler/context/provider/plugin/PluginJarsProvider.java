@@ -39,6 +39,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * pinpoint所有分析插件jar文件provider
  * @author HyunGil Jeong
  */
 public class PluginJarsProvider implements Provider<List<PluginJar>> {
@@ -60,6 +61,9 @@ public class PluginJarsProvider implements Provider<List<PluginJar>> {
         return pluginJars;
     }
 
+    /**
+     * 创建插件jar文件列表
+     * */
     private List<PluginJar> createPluginJars(final List<String> pluginJarPaths,
                                              final PluginFilter pluginFilter,
                                              final List<String> orderedPluginIdList) {
@@ -100,6 +104,10 @@ public class PluginJarsProvider implements Provider<List<PluginJar>> {
     }
     // ArtifactIdUtils.ARTIFACT_SEPARATOR
     private static final String ARTIFACT_SEPARATOR = ";";
+
+    /**
+     * 根据配置创建插件jar过滤器
+     * */
     private PluginFilter createPluginJarFilter(ProfilerConfig profilerConfig) {
         final String importPluginIdString = profilerConfig.readString(DefaultProfilerConfig.IMPORT_PLUGIN, null);
         if (StringUtils.hasLength(importPluginIdString)) {

@@ -39,6 +39,7 @@ public class DefaultPluginContextLoadResult implements PluginContextLoadResult {
         Assert.requireNonNull(pluginClassLoader, "pluginClassLoader");
         ProfilerPluginLoader profilerPluginLoader = new ProfilerPluginLoader();
         List<ProfilerPlugin> profilerPlugins = profilerPluginLoader.load(pluginClassLoader);
+        //加载插件的地方
         this.pluginsSetupResult = profilerPluginContextLoader.load(profilerPlugins);
     }
 

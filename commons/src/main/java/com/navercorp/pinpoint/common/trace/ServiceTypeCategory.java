@@ -24,6 +24,7 @@ import java.util.Set;
 public enum ServiceTypeCategory {
     UNDEFINED_CATEGORY((short)-1, (short)-1),
     PINPOINT_INTERNAL((short)0, (short)999),
+    //服务器类型
     SERVER((short)1000, (short)1999),
     DATABASE((short)2000, (short)2999),
     LIBRARY((short)5000, (short)7999),

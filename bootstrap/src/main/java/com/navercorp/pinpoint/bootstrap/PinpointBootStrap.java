@@ -29,6 +29,7 @@ import java.util.Map;
 import java.util.jar.JarFile;
 
 /**
+ * agent 入口
  * @author emeroad
  * @author netspider
  */
@@ -73,6 +74,7 @@ public class PinpointBootStrap {
             return;
         }
         BootDir bootDir = agentDirectory.getBootDir();
+        //将boot目录下的jar包由bootstrap classloader加载
         appendToBootstrapClassLoader(instrumentation, bootDir);
 
         ClassLoader parentClassLoader = getParentClassLoader();

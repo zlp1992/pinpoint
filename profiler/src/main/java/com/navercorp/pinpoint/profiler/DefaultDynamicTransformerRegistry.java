@@ -27,7 +27,9 @@ import com.navercorp.pinpoint.profiler.util.JavaAssistUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * 默认字节码转换注册器
+ * */
 public class DefaultDynamicTransformerRegistry implements DynamicTransformerRegistry {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

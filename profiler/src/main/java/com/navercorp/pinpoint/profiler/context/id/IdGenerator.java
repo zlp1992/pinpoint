@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.context.id;
 
 /**
+ * id生成器
  * @author Woonduk Kang(emeroad)
  */
 public interface IdGenerator {

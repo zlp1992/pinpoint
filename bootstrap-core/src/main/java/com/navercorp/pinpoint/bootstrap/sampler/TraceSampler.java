@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.sampler;
 
 /**
+ * trace采样器
  * @author emeroad
  */
 public interface TraceSampler {

@@ -88,7 +88,7 @@ public class DefaultApplicationContext implements ApplicationContext {
         if (logger.isInfoEnabled()) {
             logger.info("DefaultAgent classLoader:{}", this.getClass().getClassLoader());
         }
-
+        //设置guice的依赖注入
         final Module applicationContextModule = moduleFactory.newModule(agentOption);
         this.injector = Guice.createInjector(Stage.PRODUCTION, applicationContextModule);
 

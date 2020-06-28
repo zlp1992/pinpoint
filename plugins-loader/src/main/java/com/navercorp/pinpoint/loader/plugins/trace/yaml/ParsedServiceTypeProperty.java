@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.loader.plugins.trace.yaml;
 
 /**
+ * yml解析后的service-type property
  * @author HyunGil Jeong
  */
 public class ParsedServiceTypeProperty {

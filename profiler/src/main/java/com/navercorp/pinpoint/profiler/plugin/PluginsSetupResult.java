@@ -24,6 +24,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * 插件setup结果
  * @author HyunGil Jeong
  */
 public class PluginsSetupResult {

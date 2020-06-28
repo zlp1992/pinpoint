@@ -21,9 +21,13 @@ import com.navercorp.pinpoint.bootstrap.plugin.ProfilerPlugin;
 import java.util.List;
 
 /**
+ * pinpoint 分析插件加载器，用于加载pinpoint的各种插件，注意只是加载，并没有转换（transform）
  * @author HyunGil Jeong
  */
 public interface ProfilerPluginContextLoader {
 
+    /**
+     * 加载所有插件，因为pinpoint的分析插件都需要实现ProfilerPlugin接口
+     * */
     PluginsSetupResult load(List<ProfilerPlugin> profilerPlugins);
 }

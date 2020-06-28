@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * Guice依赖注入的module factory
  * @author Woonduk Kang(emeroad)
  */
 public class ApplicationContextModuleFactory implements ModuleFactory {

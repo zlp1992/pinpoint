@@ -19,6 +19,9 @@ package com.navercorp.pinpoint.common.trace;
 import java.util.List;
 
 /**
+ * 这个类也实现了之前那种通过Java spi需要插件实现TraceMetadataProvider的方式。
+ * 这里可以看到，对应新的添加service-type的形式，我们只需要在yml中定义，
+ * pinpoint解析yml后会自己实现TraceMetadataProvider然后把我们的定义加载
  * @author HyunGil Jeong
  */
 public class ParsedTraceMetadataProvider implements TraceMetadataProvider {

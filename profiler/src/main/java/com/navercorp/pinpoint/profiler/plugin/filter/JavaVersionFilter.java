@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 根据java版本对插件进行过滤的过滤器
  * @author Woonduk Kang(emeroad)
  */
 public class JavaVersionFilter implements PluginFilter {

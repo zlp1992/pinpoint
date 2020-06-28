@@ -33,6 +33,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 追踪元数据loader，记录各个插件的serviceType和annotation key
  * @author Jongho Moon
  * @author HyunGil Jeong
  */
@@ -65,6 +66,9 @@ public class TraceMetadataLoader {
         return Collections.unmodifiableList(staticFieldLookUp.lookup());
     }
 
+    /**
+     * 将插件的trace meta data provider进行setup，这个时候会调用各个插件实现的TraceMetadataProvider的setup方法
+     * */
     public void load(List<TraceMetadataProvider> providers) {
         if (providers == null) {
             throw new NullPointerException("providers");
@@ -78,6 +82,7 @@ public class TraceMetadataLoader {
             }
 
             TraceMetadataSetupContextImpl context = new TraceMetadataSetupContextImpl(provider);
+            //调用各个插件实现的TraceMetadataProvider的setup方法
             provider.setup(context);
         }
 

@@ -51,6 +51,7 @@ public class ProfilerPluginContextLoaderProvider implements Provider<ProfilerPlu
                                                InstrumentEngine instrumentEngine, BootstrapCore bootstrapCore,
                                                @PluginJars List<PluginJar> pluginJars) {
         this.profilerConfig = Assert.requireNonNull(profilerConfig, "profilerConfig");
+        //配置文件配置的应用类别
         this.configuredApplicationType = Assert.requireNonNull(configuredApplicationType, "configuredApplicationType");
         this.pluginSetup = Assert.requireNonNull(pluginSetup, "pluginSetup");
         Assert.requireNonNull(instrumentEngine, "instrumentEngine");

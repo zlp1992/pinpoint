@@ -36,6 +36,7 @@ public class DefaultAgentOption implements AgentOption {
 
     private final ProfilerConfig profilerConfig;
     private final List<String> pluginJars;
+    /**boot目录下的jar包路径集合*/
     private final List<String> bootstrapJarPaths;
 
     public DefaultAgentOption(final Instrumentation instrumentation, String agentId, String applicationName, final boolean isContainer, final ProfilerConfig profilerConfig, final List<String> pluginJars, final List<String> bootstrapJarPaths) {

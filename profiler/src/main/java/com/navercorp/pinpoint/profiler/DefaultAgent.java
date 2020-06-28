@@ -92,6 +92,7 @@ public class DefaultAgent implements Agent {
 
         this.profilerConfig = agentOption.getProfilerConfig();
 
+        //在构造函数的这一步里就对所有的插件进行了加载
         this.applicationContext = newApplicationContext(agentOption);
 
     }

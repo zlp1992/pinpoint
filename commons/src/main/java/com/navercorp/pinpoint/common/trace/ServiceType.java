@@ -259,6 +259,9 @@ public interface ServiceType {
 
     boolean isTerminal();
 
+    /**
+     * 只能用于rpc中，且不能和isRecordStatistics同时存在
+     * */
     boolean isAlias();
 
     boolean isQueue();

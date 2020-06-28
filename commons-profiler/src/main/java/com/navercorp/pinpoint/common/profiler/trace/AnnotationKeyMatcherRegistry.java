@@ -26,6 +26,7 @@ import com.navercorp.pinpoint.common.util.apache.IntHashMapUtils;
 import java.util.HashMap;
 
 /**
+ * annotation key matcher（用于service-type）注册器
  * @author emeroad
  * @author HyunGil Jeong
  */

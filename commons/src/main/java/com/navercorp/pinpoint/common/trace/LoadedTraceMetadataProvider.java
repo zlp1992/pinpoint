@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.common.trace;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 通过Java spi方式实现的trace meta 数据provider
  * @author HyunGil Jeong
  */
 public class LoadedTraceMetadataProvider implements TraceMetadataProvider {

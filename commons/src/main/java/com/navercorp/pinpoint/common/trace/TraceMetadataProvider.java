@@ -16,6 +16,7 @@ package com.navercorp.pinpoint.common.trace;
 
 
 /**
+ * 插件追踪元数据provider
  * @author Jongho Moon <jongho.moon@navercorp.com>
  *
  */

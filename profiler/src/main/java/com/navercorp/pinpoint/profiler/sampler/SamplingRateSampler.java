@@ -41,6 +41,7 @@ public class SamplingRateSampler implements Sampler {
     @Override
     public boolean isSampling() {
         int samplingCount = MathUtils.fastAbs(counter.getAndIncrement());
+        //fixme 这种方式的采样好像不是随机采样？
         int isSampling = samplingCount % samplingRate;
         return isSampling == 0;
     }

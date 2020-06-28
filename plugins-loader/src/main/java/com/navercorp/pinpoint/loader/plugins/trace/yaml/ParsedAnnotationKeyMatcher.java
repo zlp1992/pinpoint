@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.util.Assert;
 import com.navercorp.pinpoint.common.util.StringUtils;
 
 /**
+ * yml解析的Annotation-key
  * @author HyunGil Jeong
  */
 public class ParsedAnnotationKeyMatcher {

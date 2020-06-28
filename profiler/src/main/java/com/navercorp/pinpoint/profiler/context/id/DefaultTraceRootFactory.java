@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.util.Assert;
 import com.navercorp.pinpoint.profiler.context.module.AgentId;
 
 /**
+ * 默认trace根节点factory
  * @author Woonduk Kang(emeroad)
  */
 public class DefaultTraceRootFactory implements TraceRootFactory {

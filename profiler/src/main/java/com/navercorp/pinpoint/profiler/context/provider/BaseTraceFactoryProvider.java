@@ -79,6 +79,4 @@ public class BaseTraceFactoryProvider implements Provider<BaseTraceFactory> {
         final Logger logger = LoggerFactory.getLogger(DefaultBaseTraceFactory.class);
         return logger.isDebugEnabled();
     }
-
-
 }

@@ -41,6 +41,7 @@ public class ProfilerPluginLoader implements PinpointPluginLoader<ProfilerPlugin
     @Override
     public List<ProfilerPlugin> load(ClassLoader classLoader) {
         List<ProfilerPlugin> profilerPlugins = new ArrayList<ProfilerPlugin>();
+        //java spi加载所有实现了 ProfilerPlugin接口的类
         ServiceLoader<ProfilerPlugin> serviceLoader = ServiceLoader.load(ProfilerPlugin.class, classLoader);
         for (ProfilerPlugin profilerPlugin : serviceLoader) {
             profilerPlugins.add(profilerPlugin);

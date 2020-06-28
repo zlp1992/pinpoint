@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.loader.plugins.trace.yaml;
 import java.util.List;
 
 /**
+ * 解析后的yml形式的trace meta 数据
  * @author HyunGil Jeong
  */
 public class ParsedTraceMetadata {

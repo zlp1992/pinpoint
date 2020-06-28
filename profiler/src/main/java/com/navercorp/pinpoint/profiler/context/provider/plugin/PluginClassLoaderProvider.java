@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 加载插件的classLoader provider
  * @author HyunGil Jeong
  */
 public class PluginClassLoaderProvider implements Provider<ClassLoader> {

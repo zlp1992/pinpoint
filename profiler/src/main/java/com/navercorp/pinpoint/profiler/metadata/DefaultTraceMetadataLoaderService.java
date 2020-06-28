@@ -23,6 +23,7 @@ import com.navercorp.pinpoint.common.trace.ServiceTypeLocator;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 默认的trace-meta data 加载器服务类，主要用于定位service-type和annotation key等
  * @author emeroad
  * @author HyunGil Jeong
  */

@@ -27,6 +27,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 
 /**
+ * annotation key注册器
  * @author emeroad
  * @author HyunGil Jeong
  */

@@ -33,6 +33,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 默认插件setup服务
  * @author Woonduk Kang(emeroad)
  */
 public class DefaultPluginSetup implements PluginSetup {
@@ -73,7 +74,7 @@ public class DefaultPluginSetup implements PluginSetup {
     private GuardInstrumentContext preparePlugin(ProfilerPlugin plugin, InstrumentContext instrumentContext) {
 
         final GuardInstrumentContext guardInstrumentContext = new GuardInstrumentContext(instrumentContext);
-        if (plugin instanceof TransformTemplateAware) {
+        if (plugin instanceof TransformTemplateAware) { //设置TransformTemplateAware
             if (logger.isDebugEnabled()) {
                 logger.debug("{}.setTransformTemplate", plugin.getClass().getName());
             }

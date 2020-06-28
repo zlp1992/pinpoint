@@ -129,6 +129,7 @@ class PinpointStarter {
 
             final List<String> pluginJars = agentDirectory.getPlugins();
             AgentOption option = createAgentOption(agentId, applicationName, isContainer, profilerConfig, instrumentation, pluginJars, agentDirectory);
+            //默认为com.navercorp.pinpoint.profiler.DefaultAgent
             Agent pinpointAgent = agentBootLoader.boot(option);
             pinpointAgent.start();
             pinpointAgent.registerStopHandler();
@@ -232,6 +233,9 @@ class PinpointStarter {
         systemProperty.setProperty(ProductInfo.NAME + ".version", Version.VERSION);
     }
 
+    /**
+     * 解析pinpoint目录下lib目录下的jar包
+     * */
     private URL[] resolveLib(AgentDirectory classPathResolver) {
         // this method may handle only absolute path,  need to handle relative path (./..agentlib/lib)
         String agentJarFullPath = classPathResolver.getAgentJarFullPath();

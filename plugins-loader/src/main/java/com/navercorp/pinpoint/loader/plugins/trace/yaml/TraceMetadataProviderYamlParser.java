@@ -37,6 +37,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * yml文件的trace meta 数据 provider 解析器
  * @author HyunGil Jeong
  */
 public class TraceMetadataProviderYamlParser implements TraceMetadataProviderParser {
@@ -45,10 +46,12 @@ public class TraceMetadataProviderYamlParser implements TraceMetadataProviderPar
 
     @Override
     public ParsedTraceMetadataProvider parse(URL url) {
+        //获取唯一标识
         String typeProviderId = getTypeProviderId(url);
         try {
             ParsedTraceMetadata parsedTraceMetadata = parse0(url);
-            try {List<ServiceTypeInfo> serviceTypeInfos = toServiceTypeInfos(parsedTraceMetadata.getServiceTypes());
+            try {
+                List<ServiceTypeInfo> serviceTypeInfos = toServiceTypeInfos(parsedTraceMetadata.getServiceTypes());
                 List<AnnotationKey> annotationKeys = toAnnotationKeys(parsedTraceMetadata.getAnnotationKeys());
                 return new ParsedTraceMetadataProvider(typeProviderId, serviceTypeInfos, annotationKeys);
             } catch (Exception e) {

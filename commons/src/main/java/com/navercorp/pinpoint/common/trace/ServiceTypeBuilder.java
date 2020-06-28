@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.common.trace;
 
 /**
+ * service-type builder，建造者模式
  * @author HyunGil Jeong
  */
 public class ServiceTypeBuilder {

@@ -20,6 +20,8 @@ import static com.navercorp.pinpoint.common.trace.AnnotationKeyProperty.ERROR_AP
 import static com.navercorp.pinpoint.common.trace.AnnotationKeyProperty.VIEW_IN_RECORD_SET;
 
 /**
+ * Annotation 是包含在 Span 和 SpanEvent 中的更详尽的数据，以键值对的形式存在，键就是 AnnotationKey，值可以是字符串或字节数组
+ *
  * AnnotationKey sandbox is from 900 to 999. These values will not be assigned to anything.
  *
  * <table>

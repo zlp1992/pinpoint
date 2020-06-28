@@ -29,6 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * service-type注册器
  * @author emeroad
  * @author HyunGil Jeong
  */

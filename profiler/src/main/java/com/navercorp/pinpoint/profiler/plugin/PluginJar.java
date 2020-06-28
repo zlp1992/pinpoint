@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.jar.JarFile;
 
 /**
+ * 表示pinpoint分析插件jar文件
  * @author HyunGil Jeong
  */
 public class PluginJar {
@@ -53,6 +54,9 @@ public class PluginJar {
         this.pluginPackages = StringUtils.tokenizeToStringList(pluginPackages, ",");
     }
 
+    /*
+     * 根据插件文件路径创建插件jar文件
+     * */
     public static PluginJar fromFilePath(String filePath) {
         final File file = toFile(filePath);
         return fromFile(file);

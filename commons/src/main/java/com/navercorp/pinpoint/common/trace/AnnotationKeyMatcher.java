@@ -15,6 +15,7 @@
 package com.navercorp.pinpoint.common.trace;
 
 /**
+ * 判断annotation-key是否匹配
  * @author Jongho Moon
  *
  */

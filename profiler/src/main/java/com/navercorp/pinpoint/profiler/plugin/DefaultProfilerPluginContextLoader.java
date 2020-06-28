@@ -35,6 +35,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 默认pinpoint分析插件上下文加载器
  * @author Jongho Moon
  *
  */

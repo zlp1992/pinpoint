@@ -23,5 +23,8 @@ import com.navercorp.pinpoint.bootstrap.AgentOption;
  * @author Woonduk Kang(emeroad)
  */
 public interface ModuleFactory {
+    /**
+     * 根据选项创建guice的module，确定依赖注入
+     * */
     Module newModule(AgentOption agentOption);
 }

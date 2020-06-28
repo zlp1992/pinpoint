@@ -24,6 +24,7 @@ import java.lang.instrument.ClassFileTransformer;
 import java.util.List;
 
 /**
+ * 插件上下文加载结果类，记录pinpoint插件的加载结果详情，其默认实现会加载插件
  * @author Woonduk Kang(emeroad)
  */
 public interface PluginContextLoadResult {

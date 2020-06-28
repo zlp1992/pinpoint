@@ -39,6 +39,9 @@ import java.util.ServiceLoader;
 import java.util.Set;
 
 /**
+ * 插件追踪元数据provider加载器
+ * 新的通过yml文件解析各个插件的service-type等追踪元数据（见redis-lettuce插件）
+ * 之前的service-type也是像plugin一样通过spi加载（见tomcat插件）
  * @author HyunGil Jeong
  * @author Taejin Koo
  */
@@ -75,11 +78,15 @@ public class TraceMetadataProviderLoader implements PinpointPluginLoader<TraceMe
     @Override
     public List<TraceMetadataProvider> load(ClassLoader classLoader) {
         List<TraceMetadataProvider> traceMetadataProviders = new ArrayList<TraceMetadataProvider>();
+        //fixme这里需要考虑如果某个插件既通过yml又通过spi方式的重复性吗？
         traceMetadataProviders.addAll(fromMetaFiles(classLoader));
         traceMetadataProviders.addAll(fromServiceLoader(classLoader));
         return traceMetadataProviders;
     }
 
+    /**
+     * 新的通过yml文件形式提供trace meta数据provider，通过这种方式实现的插件需要提供type-provider.yml，见redis-lettuce插件
+     * */
     private List<TraceMetadataProvider> fromMetaFiles(ClassLoader classLoader) {
         Set<String> loadedProviderIds = new HashSet<String>();
         List<TraceMetadataProvider> traceMetadataProviders = new ArrayList<TraceMetadataProvider>();
@@ -107,6 +114,7 @@ public class TraceMetadataProviderLoader implements PinpointPluginLoader<TraceMe
         }
 
         try {
+            //找到所有插件的type-provider.yml文件
             Enumeration<URL> pluginTypeProviderUrls = classLoader.getResources(typeProviderDefEntry);
             while (pluginTypeProviderUrls.hasMoreElements()) {
                 URL pluginTypeProviderUrl = pluginTypeProviderUrls.nextElement();
@@ -122,6 +130,9 @@ public class TraceMetadataProviderLoader implements PinpointPluginLoader<TraceMe
         return typeProviderUrls;
     }
 
+    /**
+     * 老的通过Java spi方式加载service-type provider，通过这种方式的插件需要实现接口 TraceMetadataProvider ，见tomcat插件
+     * */
     private List<TraceMetadataProvider> fromServiceLoader(ClassLoader classLoader) {
         List<TraceMetadataProvider> traceMetadataProviders = new ArrayList<TraceMetadataProvider>();
         ServiceLoader<TraceMetadataProvider> serviceLoader = ServiceLoader.load(TraceMetadataProvider.class, classLoader);

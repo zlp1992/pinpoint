@@ -51,6 +51,9 @@ public class JavaAgentPathResolver {
         return new AgentPathFinder[] {classAgentPath, inputArgumentAgentPath};
     }
 
+    /**
+     * 获取agent jar包所在路径
+     * */
     public String resolveJavaAgentPath() {
         for (AgentPathFinder agentPath : agentPathFinders) {
             final String path = agentPath.getPath();

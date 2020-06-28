@@ -28,6 +28,7 @@ import com.navercorp.pinpoint.profiler.context.module.PluginClassLoader;
 import java.util.List;
 
 /**
+ * 插件追踪元数据loader provider
  * @author HyunGil Jeong
  */
 public class TraceMetadataLoaderProvider implements Provider<TraceMetadataLoader> {
@@ -44,6 +45,7 @@ public class TraceMetadataLoaderProvider implements Provider<TraceMetadataLoader
     @Override
     public TraceMetadataLoader get() {
         TraceMetadataProviderLoader traceMetadataProviderLoader = new TraceMetadataProviderLoader();
+        //这时候的pluginClassLoader已经加载了各个插件URL了
         List<TraceMetadataProvider> traceMetadataProviders = traceMetadataProviderLoader.load(pluginClassLoader);
         TraceMetadataLoader traceMetadataLoader = new TraceMetadataLoader(commonLoggerFactory);
         traceMetadataLoader.load(traceMetadataProviders);

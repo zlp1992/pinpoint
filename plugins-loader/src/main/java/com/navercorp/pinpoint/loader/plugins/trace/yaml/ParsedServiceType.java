@@ -24,6 +24,7 @@ import com.navercorp.pinpoint.common.trace.ServiceTypeInfo;
 import com.navercorp.pinpoint.common.util.StringUtils;
 
 /**
+ * yml解析后的service-type
  * @author HyunGil Jeong
  */
 public class ParsedServiceType {
@@ -74,6 +75,9 @@ public class ParsedServiceType {
         this.matcher = matcher;
     }
 
+    /**
+     * 将解析的yml格式的service-type转化成pinpoint中的service-type
+     * */
     ServiceTypeInfo toServiceTypeInfo() {
         if (code == null) {
             throw new NullPointerException("service type code");

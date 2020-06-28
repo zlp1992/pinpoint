@@ -18,6 +18,7 @@ package com.navercorp.pinpoint.common.trace;
 
 
 /**
+ * service-type信息
  * @author emeroad
  */
 public interface ServiceTypeInfo {

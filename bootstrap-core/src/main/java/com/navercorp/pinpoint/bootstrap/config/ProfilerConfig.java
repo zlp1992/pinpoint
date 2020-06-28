@@ -259,8 +259,14 @@ public interface ProfilerConfig {
 
     List<String> getApplicationTypeDetectOrder();
 
+    /**
+     * 获取插件的加载顺序，不同的插件加载顺序必须不同
+     * */
     List<String> getPluginLoadOrder();
 
+    /**
+     * 获取不可用的插件列表
+     * */
     List<String> getDisabledPlugins();
 
     String getApplicationServerType();

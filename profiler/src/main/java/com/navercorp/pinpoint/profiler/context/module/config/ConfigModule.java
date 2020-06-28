@@ -50,6 +50,7 @@ import java.lang.instrument.Instrumentation;
 import java.util.List;
 
 /**
+ * 配置相关的guice依赖注入模块
  * @author Woonduk Kang(emeroad)
  */
 public class ConfigModule extends AbstractModule {

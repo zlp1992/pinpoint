@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.profiler.context.id;
 import com.navercorp.pinpoint.bootstrap.context.TraceId;
 
 /**
+ * traceId工厂
  * @author Woonduk Kang(emeroad)
  */
 public interface TraceIdFactory {

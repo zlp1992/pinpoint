@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.common.trace;
 
 /**
+ * 默认service-type
  * @author emeroad
  * @author netspider
  * @author Jongho Moon
