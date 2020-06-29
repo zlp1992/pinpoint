@@ -15,6 +15,7 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
+ * 装饰器模式的类，用于装饰其它拦截器类，主要做异常处理的功能增强
  * @author jaehong.kim
  */
 public class ExceptionHandleAroundInterceptor implements AroundInterceptor {

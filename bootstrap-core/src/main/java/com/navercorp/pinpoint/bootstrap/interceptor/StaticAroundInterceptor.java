@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
+ * 静态方法的环绕拦截器，与AroundInterceptor类似，只不过是针对静态方法的拦截
  * @author emeroad
  */
 public interface StaticAroundInterceptor extends Interceptor {

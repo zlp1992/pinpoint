@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.bootstrap.interceptor.scope.InterceptorScope;
 import java.security.ProtectionDomain;
 
 /**
+ * asm操作字节码的工具类，用于编写各种分析插件时定义的transformCallback使用
  * @author Jongho Moon
  *
  */

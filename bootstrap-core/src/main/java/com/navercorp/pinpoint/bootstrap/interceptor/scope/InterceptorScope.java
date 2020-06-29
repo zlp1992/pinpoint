@@ -16,6 +16,7 @@ package com.navercorp.pinpoint.bootstrap.interceptor.scope;
 
 
 /**
+ * 作用域或作用范围：起到的作用是将多个拦截器关联在一起
  * @author Jongho Moon
  *
  */

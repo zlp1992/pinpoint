@@ -47,6 +47,7 @@ public class TraceContextProvider implements Provider<TraceContext> {
     private final SqlMetaDataService sqlMetaDataService;
     private final JdbcContext jdbcContext;
 
+    //fixme 这注入provider?不是注入实例吗？
     @Inject
     public TraceContextProvider(ProfilerConfig profilerConfig,
                                 final Provider<AgentInformation> agentInformationProvider,

@@ -15,11 +15,15 @@
 package com.navercorp.pinpoint.bootstrap.interceptor.scope;
 
 /**
+ * 执行策略：控制拦截器是否执行
  * @author Jongho Moon
  *
  */
 public enum ExecutionPolicy {
+    /**总是执行拦截器*/
     ALWAYS,
+    /**边界处执行拦截器*/
     BOUNDARY,
+    /**与BOUNDARY相反，边界处不执行，内部调用时执行拦截器*/
     INTERNAL
 }

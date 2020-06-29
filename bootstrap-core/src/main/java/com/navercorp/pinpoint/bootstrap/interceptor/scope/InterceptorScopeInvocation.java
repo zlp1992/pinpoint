@@ -26,12 +26,13 @@ package com.navercorp.pinpoint.bootstrap.interceptor.scope;
 public interface InterceptorScopeInvocation {
     String getName();
 
+    /**以给定执行策略尝试进入拦截器*/
     boolean tryEnter(ExecutionPolicy policy);
     boolean canLeave(ExecutionPolicy policy);
     void leave(ExecutionPolicy policy);
     
     boolean isActive();
-    
+    /**同scope的拦截器之间可以传递参数*/
     Object setAttachment(Object attachment);
     Object getAttachment();
     Object getOrCreateAttachment(AttachmentFactory factory);

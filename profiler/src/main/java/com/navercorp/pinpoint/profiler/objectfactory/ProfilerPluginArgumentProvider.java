@@ -28,6 +28,7 @@ import com.navercorp.pinpoint.exception.PinpointException;
 import com.navercorp.pinpoint.profiler.util.TypeUtils;
 
 /**
+ * pinpoint分析插件参数自动绑定provider
  * @author Jongho Moon
  *
  */

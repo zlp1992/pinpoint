@@ -104,6 +104,9 @@ public class DefaultProfilerConfig implements ProfilerConfig {
     private boolean instrumentMatcherEnable = true;
     private InstrumentMatcherCacheConfig instrumentMatcherCacheConfig = new InstrumentMatcherCacheConfig();
 
+    /**
+     * 拦截器数量上限
+     * */
     private int interceptorRegistrySize = 1024 * 8;
 
     @VisibleForTesting

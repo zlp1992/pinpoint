@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.bootstrap.config;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 传输模块，目前有grpc和thrift
  * @author Woonduk Kang(emeroad)
  */
 public enum TransportModule {

@@ -78,7 +78,7 @@ public class TraceMetadataProviderLoader implements PinpointPluginLoader<TraceMe
     @Override
     public List<TraceMetadataProvider> load(ClassLoader classLoader) {
         List<TraceMetadataProvider> traceMetadataProviders = new ArrayList<TraceMetadataProvider>();
-        //fixme这里需要考虑如果某个插件既通过yml又通过spi方式的重复性吗？
+
         traceMetadataProviders.addAll(fromMetaFiles(classLoader));
         traceMetadataProviders.addAll(fromServiceLoader(classLoader));
         return traceMetadataProviders;

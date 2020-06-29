@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
+ * 拦截器接口
  * @author emeroad
  */
 public interface Interceptor {

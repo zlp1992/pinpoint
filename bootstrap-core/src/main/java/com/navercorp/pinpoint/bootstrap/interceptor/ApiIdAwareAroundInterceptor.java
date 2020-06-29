@@ -16,6 +16,7 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
+ * 关注apiId的环绕拦截器，拦截方法会多一个apiId
  * @author Jongho Moon
  *
  */

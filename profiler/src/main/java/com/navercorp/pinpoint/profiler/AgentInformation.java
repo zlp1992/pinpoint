@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.profiler;
 import com.navercorp.pinpoint.common.trace.ServiceType;
 
 /**
+ * agent信息
  * @author Woonduk Kang(emeroad)
  */
 public interface AgentInformation {

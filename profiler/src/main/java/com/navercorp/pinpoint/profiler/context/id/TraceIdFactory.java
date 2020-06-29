@@ -19,7 +19,7 @@ package com.navercorp.pinpoint.profiler.context.id;
 import com.navercorp.pinpoint.bootstrap.context.TraceId;
 
 /**
- * traceId工厂
+ * traceId工厂，用于创建trace中的traceId
  * @author Woonduk Kang(emeroad)
  */
 public interface TraceIdFactory {

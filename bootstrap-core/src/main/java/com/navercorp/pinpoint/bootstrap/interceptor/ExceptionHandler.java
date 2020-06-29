@@ -17,6 +17,8 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
+ * 用于处理拦截器方法发生的异常，我们插入了before、after方法，如果这些方法发生异常而不处理，
+ * 那将影响到原始方法体的执行逻辑，因此有必要对拦截器方法发生的异常做处理
  * @author Woonduk Kang(emeroad)
  */
 public interface ExceptionHandler {
