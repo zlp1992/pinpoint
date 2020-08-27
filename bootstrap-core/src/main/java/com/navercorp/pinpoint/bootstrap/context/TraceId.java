@@ -17,6 +17,8 @@
 package com.navercorp.pinpoint.bootstrap.context;
 
 /**
+ * 由 TransactionId, SpanId, 和 ParentSpanId 组成的key的集合. TransactionId 指明消息ID，
+ * 而SpanId 和 ParentSpanId 表示RPC的父-子关系
  * @author emeroad
  */
 public interface TraceId {
@@ -37,5 +39,8 @@ public interface TraceId {
 
     short getFlags();
 
+    /**
+     * 是否是根traceId
+     * */
     boolean isRoot();
 }

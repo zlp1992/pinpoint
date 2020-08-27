@@ -24,6 +24,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
+ * 构造方法解析器，比如解析插件的构造方法
  * @author Jongho Moon
  *
  */

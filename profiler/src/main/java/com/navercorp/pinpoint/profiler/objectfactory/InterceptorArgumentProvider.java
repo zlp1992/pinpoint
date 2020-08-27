@@ -29,6 +29,7 @@ import com.navercorp.pinpoint.profiler.util.TypeUtils;
 import java.lang.annotation.Annotation;
 
 /**
+ * 拦截器参数Provider，主要是提供拦截器接口中的参数
  * @author Jongho Moon
  *
  */

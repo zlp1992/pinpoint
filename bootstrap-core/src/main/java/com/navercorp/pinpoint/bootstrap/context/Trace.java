@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.bootstrap.context.scope.TraceScope;
 import com.navercorp.pinpoint.common.annotations.InterfaceAudience;
 
 /**
+ * 多个Span的集合; 由关联的RPC (Spans)组成. 在同一个trace中的span共享相同的TransactionId。Trace通过SpanId和ParentSpanId整理为继承树结构
  * @author emeroad
  * @author jaehong.kim
  */

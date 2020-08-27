@@ -24,6 +24,9 @@ public final class TypeUtils {
     private TypeUtils() {
     }
 
+    /**
+     * 获取基础类型的包装类型
+     * */
     public static Class<?> getWrapperOf(Class<?> primitive) {
         if (primitive == boolean.class) {
             return Boolean.class;

@@ -26,6 +26,7 @@ import java.util.List;
 
 /**
  * Span represent RPC
+ * Span表示在完整链路中，请求所经过的某一个单一的执行节点，而SpanEvent表示此执行节点下的单个执行方法
  *
  * @author netspider
  * @author emeroad
@@ -35,6 +36,9 @@ public class Span extends DefaultFrameAttachment {
 
     private final TraceRoot traceRoot;
 
+    /**
+     * fixme 这里的startTime是此Span的startTime还是整个trace的startTime
+     * */
     private long startTime; // required
     private int elapsedTime; // optional
 

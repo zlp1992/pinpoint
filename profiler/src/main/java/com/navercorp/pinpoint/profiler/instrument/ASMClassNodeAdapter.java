@@ -46,6 +46,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * asm ClassNode适配器
  * @author jaehong.kim
  */
 public class ASMClassNodeAdapter {
@@ -116,6 +117,9 @@ public class ASMClassNodeAdapter {
     private final ClassInputStreamProvider pluginInputStreamProvider;
     private final ClassLoader classLoader;
     private final ProtectionDomain protectionDomain;
+    /**
+     * asm ClassNode节点，映射整个类树形结构
+     * */
     private final ClassNode classNode;
     private final boolean skipCode;
 

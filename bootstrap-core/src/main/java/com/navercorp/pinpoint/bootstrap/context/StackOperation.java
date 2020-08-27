@@ -24,10 +24,16 @@ public interface StackOperation {
 
     int ROOT_STACKID = 0;
 
+    /**
+     * 开始一个新的trace 块（Span?）
+     * */
     SpanEventRecorder traceBlockBegin();
 
     SpanEventRecorder traceBlockBegin(int stackId);
 
+    /**
+     * 关闭trace块（Span）
+     * */
     void traceBlockEnd();
 
     void traceBlockEnd(int stackId);

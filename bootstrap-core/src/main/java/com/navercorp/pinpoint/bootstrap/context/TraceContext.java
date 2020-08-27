@@ -28,11 +28,14 @@ import com.navercorp.pinpoint.common.annotations.InterfaceStability;
  */
 public interface TraceContext {
 
+    /**
+     * 获取当前的trace，如果没有采样则不会返回
+     * */
     Trace currentTraceObject();
 
     /**
      * return a trace whose sampling rate should be further verified
-     * 
+     * 获取当前的原生trace，没有采样也会返回
      * @return
      */
     Trace currentRawTraceObject();

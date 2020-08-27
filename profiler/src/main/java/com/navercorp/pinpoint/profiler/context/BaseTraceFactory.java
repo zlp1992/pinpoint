@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.annotations.InterfaceAudience;
 import com.navercorp.pinpoint.profiler.context.id.TraceRoot;
 
 /**
+ * 基础trace工厂
  * @author emeroad
  */
 public interface BaseTraceFactory {

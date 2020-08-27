@@ -122,6 +122,7 @@ public class AnnotatedInterceptorFactory implements InterceptorFactory {
             }
         } else {
             if (exceptionHandlerFactory.isHandleException()) {
+                //如果需要捕获插件的异常，则进行包装
                 return wrapByExceptionHandle(interceptor);
             }
         }

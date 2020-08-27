@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.context;
 
 /**
+ * 线程Binder
  * @author emeroad
  */
 public interface Binder<T> {

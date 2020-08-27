@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.instrument.matcher;
 
 /**
+ * 默认的基于类名的匹配器
  * @author emeroad
  */
 public class DefaultClassNameMatcher implements ClassNameMatcher {

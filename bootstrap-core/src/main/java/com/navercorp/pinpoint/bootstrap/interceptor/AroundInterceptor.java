@@ -17,7 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.interceptor;
 
 /**
- * 带参方法环绕拦截器，在方法执行的前后增加拦截，如果原方法体执行出现异常，也将被拦截
+ * 带可变个参数的环绕拦截器，在方法执行的前后增加拦截，如果原方法体执行出现异常，也将被拦截
  * @author emeroad
  */
 public interface AroundInterceptor extends Interceptor {

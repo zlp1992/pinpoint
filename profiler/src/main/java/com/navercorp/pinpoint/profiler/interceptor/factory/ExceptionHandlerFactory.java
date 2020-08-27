@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.profiler.interceptor.factory;
 import com.navercorp.pinpoint.bootstrap.interceptor.ExceptionHandler;
 
 /**
+ * 插件异常处理器工厂类
  * @author Woonduk Kang(emeroad)
  */
 public class ExceptionHandlerFactory {

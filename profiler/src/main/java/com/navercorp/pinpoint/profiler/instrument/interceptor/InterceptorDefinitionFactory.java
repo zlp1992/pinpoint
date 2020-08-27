@@ -27,6 +27,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 拦截器定义工厂类
  * @author Woonduk Kang(emeroad)
  */
 public class InterceptorDefinitionFactory {

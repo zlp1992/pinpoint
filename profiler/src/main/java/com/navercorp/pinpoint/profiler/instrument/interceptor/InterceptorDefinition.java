@@ -21,15 +21,25 @@ import com.navercorp.pinpoint.bootstrap.interceptor.Interceptor;
 import java.lang.reflect.Method;
 
 /**
+ * 拦截器定义
  * @author Woonduk Kang(emeroad)
  */
 public interface InterceptorDefinition {
+    /**
+     * 获取拦截器基类
+     * */
     Class<? extends Interceptor> getInterceptorBaseClass();
 
+    /**
+     * 获取实现了基类的自定义拦截器类
+     * */
     Class<? extends Interceptor> getInterceptorClass();
 
     InterceptorType getInterceptorType();
 
+    /**
+     * 获取拦截类型
+     * */
     CaptureType getCaptureType();
 
     Method getBeforeMethod();

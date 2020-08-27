@@ -24,9 +24,14 @@ import com.navercorp.pinpoint.common.annotations.InterfaceAudience;
  * @author Woonduk Kang(emeroad)
  */
 public interface TraceFactory {
-
+    /**
+     * 获取当前的trace，如果非采用则返回null
+     * */
     Trace currentTraceObject();
 
+    /**
+     * 返回当前的trace，无论是否采样
+     * */
     Trace currentRawTraceObject();
 
     Trace removeTraceObject();

@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.context;
 
 /**
+ * 方法调用栈
  * @author Woonduk Kang(emeroad)
  */
 public interface CallStack<T> {

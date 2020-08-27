@@ -32,6 +32,11 @@ public interface EngineComponent {
 
     ObjectBinderFactory getObjectBinderFactory();
 
+    /**
+     * 注册插件
+     * @param interceptor 插件
+     * @return 插件内部id
+     * */
     int addInterceptor(Interceptor interceptor);
 
     int cacheApi(MethodDescriptor methodDescriptor);

@@ -26,6 +26,10 @@ public interface TraceIdFactory {
 
     TraceId newTraceId(long localTransactionId);
 
+    /**
+     * 获取下一个traceId
+     * @param transactionId 全局transactionId
+     * */
     TraceId continueTraceId(String transactionId, long parentSpanId, long spanId, short flags);
 
 }

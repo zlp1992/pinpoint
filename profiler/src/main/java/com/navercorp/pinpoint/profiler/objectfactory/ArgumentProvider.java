@@ -17,9 +17,16 @@ package com.navercorp.pinpoint.profiler.objectfactory;
 import java.lang.annotation.Annotation;
 
 /**
+ * 参数Provider
  * @author Jongho Moon
  *
  */
 public interface ArgumentProvider {
+    /**
+     * 解析参数
+     * @param index 参数的位置，即参数在方法中是第几个
+     * @param type 参数类型
+     * @param annotations 参数上的注解列表
+     * */
     Option get(int index, Class<?> type, Annotation[] annotations);
 }

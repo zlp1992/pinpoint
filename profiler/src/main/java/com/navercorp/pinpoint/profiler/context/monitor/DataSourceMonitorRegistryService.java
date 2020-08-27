@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.bootstrap.plugin.monitor.DataSourceMonitor;
 import java.util.List;
 
 /**
+ * 数据源监控注册服务
  * @author Taejin Koo
  */
 public interface DataSourceMonitorRegistryService {

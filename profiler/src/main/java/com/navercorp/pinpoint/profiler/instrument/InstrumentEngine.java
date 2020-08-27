@@ -24,6 +24,7 @@ import java.security.ProtectionDomain;
 import java.util.jar.JarFile;
 
 /**
+ * 字节码插装引擎
  * @author Jongho Moon
  *
  */

@@ -64,6 +64,9 @@ public class ObjectBinderFactory {
     }
 
 
+    /**
+     * 获取拦截器参数Provider
+     * */
     public InterceptorArgumentProvider newInterceptorArgumentProvider(InstrumentClass instrumentClass) {
         ApiMetaDataService apiMetaDataService = this.apiMetaDataServiceProvider.get();
         return new InterceptorArgumentProvider(dataSourceMonitorRegistry, apiMetaDataService, requestRecorderFactory, instrumentClass);

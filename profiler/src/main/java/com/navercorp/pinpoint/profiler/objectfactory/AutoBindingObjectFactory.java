@@ -32,6 +32,7 @@ import com.navercorp.pinpoint.bootstrap.plugin.ObjectFactory.ByStaticFactoryMeth
 import com.navercorp.pinpoint.exception.PinpointException;
 
 /**
+ * 参数自动绑定工厂类
  * @author Jongho Moon
  *
  */
@@ -86,7 +87,9 @@ public class AutoBindingObjectFactory {
         final ArgumentsResolver argumentsResolver = getArgumentResolver(arguments, providers);
         return byConstructor(type, argumentsResolver);
     }
-    
+    /**
+     * 根据构造方法创建类型为<code>type</code>的实例
+     * */
     private Object byConstructor(Class<?> type, ArgumentsResolver argumentsResolver) {
         final ConstructorResolver resolver = new ConstructorResolver(type, argumentsResolver);
         

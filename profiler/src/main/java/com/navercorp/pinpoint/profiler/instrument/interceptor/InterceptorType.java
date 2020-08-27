@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.instrument.interceptor;
 
 /**
+ * 拦截器类型
  * @author Woonduk Kang(emeroad)
  */
 public enum InterceptorType {

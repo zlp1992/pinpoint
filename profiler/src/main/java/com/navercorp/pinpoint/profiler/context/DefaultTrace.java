@@ -31,6 +31,7 @@ import com.navercorp.pinpoint.exception.PinpointException;
 import com.navercorp.pinpoint.profiler.context.storage.Storage;
 
 /**
+ * 默认trace
  * @author netspider
  * @author emeroad
  * @author jaehong.kim

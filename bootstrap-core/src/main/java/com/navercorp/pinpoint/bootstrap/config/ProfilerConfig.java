@@ -226,8 +226,14 @@ public interface ProfilerConfig {
 
     int getMaxSqlBindValueSize();
 
+    /**
+     * 是否允许采样
+     * */
     boolean isSamplingEnable();
 
+    /**
+     * 采样率
+     * */
     int getSamplingRate();
 
     int getSamplingNewThroughput();

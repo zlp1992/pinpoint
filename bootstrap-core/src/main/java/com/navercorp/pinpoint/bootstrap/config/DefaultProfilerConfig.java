@@ -157,6 +157,9 @@ public class DefaultProfilerConfig implements ProfilerConfig {
     private List<String> pluginLoadOrder = Collections.emptyList();
     private List<String> disabledPlugins = Collections.emptyList();
 
+    /**
+     * 是否传播拦截器发生的异常
+     * */
     private boolean propagateInterceptorException = false;
     private boolean supportLambdaExpressions = true;
 

@@ -18,6 +18,7 @@ import java.lang.annotation.Annotation;
 import java.util.List;
 
 /**
+ * 参数解析器，根据制定的参数Provider解析参数
  * @author Jongho Moon
  *
  */
@@ -29,6 +30,11 @@ public class ArgumentsResolver {
         this.parameterResolvers = parameterResolvers;
     }
 
+    /**
+     * 解析参数
+     * @param types 参数类型数组
+     * @param annotations 参数对应的注解二维数组
+     * */
     public Object[] resolve(Class<?>[] types, Annotation[][] annotations) {
         int length = types.length;
         Object[] arguments = new Object[length];

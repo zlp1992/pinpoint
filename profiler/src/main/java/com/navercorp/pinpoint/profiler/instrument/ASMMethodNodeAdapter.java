@@ -33,7 +33,7 @@ import java.util.List;
  * @author jaehong.kim
  */
 public class ASMMethodNodeAdapter {
-
+    /**asm中的类名*/
     private final String declaringClassInternalName;
     private final MethodNode methodNode;
     private final ASMMethodVariables methodVariables;

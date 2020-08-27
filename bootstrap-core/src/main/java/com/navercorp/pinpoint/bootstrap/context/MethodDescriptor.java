@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.bootstrap.context;
 
 /**
+ * 方法描述符
  * @author emeroad
  * @author jaehong.kim
  */
