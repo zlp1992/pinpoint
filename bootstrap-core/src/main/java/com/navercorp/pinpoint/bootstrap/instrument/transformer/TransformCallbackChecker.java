@@ -35,6 +35,7 @@ public final class TransformCallbackChecker {
         Assert.requireNonNull(transformCallbackClass, "transformCallbackClass");
 
         // check inner class
+        //获取类的直接外部类
         final Class<?> enclosingClass = transformCallbackClass.getEnclosingClass();
         if (enclosingClass != null) {
             // inner class state

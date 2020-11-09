@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.bootstrap.instrument.matcher.operand.MatcherOperan
 import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 
 /**
+ * 括号运算符
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable

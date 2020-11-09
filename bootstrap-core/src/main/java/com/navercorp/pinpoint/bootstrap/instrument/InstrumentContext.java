@@ -24,6 +24,7 @@ import java.io.InputStream;
 import java.security.ProtectionDomain;
 
 /**
+ * 字节码注入上下文
  * @author Woonduk Kang(emeroad)
  * @author jaehong.kim
  */

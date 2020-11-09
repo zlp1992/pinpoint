@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 非运算符，同时也是操作数
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable

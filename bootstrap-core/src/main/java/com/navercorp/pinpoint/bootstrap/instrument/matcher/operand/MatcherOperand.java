@@ -19,23 +19,42 @@ package com.navercorp.pinpoint.bootstrap.instrument.matcher.operand;
 import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 
 /**
+ * 匹配操作数
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable
 public interface MatcherOperand {
 
+    /**
+     * 是不是操作符
+     * */
     boolean isOperator();
 
     // for execution plan.
+    /**
+     * 执行耗时
+     * */
     int getExecutionCost();
+    /**
+     * todo 什么意思？
+     * */
     boolean isIndex();
 
     // this and operand
+    /**
+     * 与操作
+     * */
     MatcherOperand and(MatcherOperand operand);
 
     // this or operand
+    /**
+     * 或操作
+     * */
     MatcherOperand or(MatcherOperand operand);
 
     // not this
+    /**
+     * 非操作
+     * */
     MatcherOperand not();
 }

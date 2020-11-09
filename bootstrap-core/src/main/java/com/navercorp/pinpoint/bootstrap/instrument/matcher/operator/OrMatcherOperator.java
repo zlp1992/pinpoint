@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 或运算符，同时也是操作数
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable
@@ -41,6 +42,7 @@ public class OrMatcherOperator extends AbstractMatcherOperand implements Matcher
     @Override
     public int getExecutionCost() {
         // left operand + right operand.
+        //todo 或操作符的执行耗时怎么和与操作符的一样，或应该是max(left,right)?
         return this.leftOperand.getExecutionCost() + this.rightOperand.getExecutionCost();
     }
 

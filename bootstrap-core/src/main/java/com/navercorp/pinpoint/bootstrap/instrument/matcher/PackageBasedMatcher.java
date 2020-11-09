@@ -18,6 +18,7 @@ package com.navercorp.pinpoint.bootstrap.instrument.matcher;
 import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 
 /**
+ * 基于包的匹配器
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable

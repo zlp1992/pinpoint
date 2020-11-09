@@ -20,11 +20,15 @@ import com.navercorp.pinpoint.common.util.Assert;
 import com.navercorp.pinpoint.common.util.ClassUtils;
 
 /**
+ * 基于注解内部名进行匹配的操作数
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable
 public class AnnotationInternalNameMatcherOperand extends AbstractMatcherOperand {
     private final String annotationInternalName;
+    /**
+     * 是否考虑元注解,比如@Target、@Retention等java元注解
+     * */
     private final boolean considerMetaAnnotation;
 
     public AnnotationInternalNameMatcherOperand(final String annotationName, final boolean considerMetaAnnotation) {

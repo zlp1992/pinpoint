@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 import com.navercorp.pinpoint.common.util.Assert;
 
 /**
+ * 与预算数，同时也是操作符
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable

@@ -20,6 +20,7 @@ import com.navercorp.pinpoint.common.util.Assert;
 import com.navercorp.pinpoint.common.util.ClassUtils;
 
 /**
+ * 基于父类内部名进行匹配的操作数
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable

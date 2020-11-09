@@ -19,6 +19,7 @@ import com.navercorp.pinpoint.bootstrap.instrument.matcher.operand.MatcherOperan
 import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 
 /**
+ * 匹配运算符
  * @author jaehong.kim
  */
 @InterfaceStability.Unstable
@@ -27,9 +28,18 @@ public interface MatcherOperator {
     // NOT - 3
     // AND - 2
     // OR - 1
+    /**
+     * 获取操作符的优先级
+     * */
     int getPrecedence();
 
+    /**
+     * 获取左操作数
+     * */
     MatcherOperand getLeftOperand();
 
+    /**
+     * 获取右操作数
+     * */
     MatcherOperand getRightOperand();
 }
