@@ -31,8 +31,17 @@ import com.navercorp.pinpoint.profiler.monitor.metric.transaction.TransactionMet
  */
 public class AgentStatMetricSnapshot {
     private String agentId;
+    /**
+     * agent启动时间
+     * */
     private long startTimestamp;
+    /**
+     * 本次开始收集的时间
+     * */
     private long timestamp;
+    /**
+     * 距离上一次收集的时间间隔
+     * */
     private long collectInterval;
     private JvmGcMetricSnapshot gc;
     private CpuLoadMetricSnapshot cpuLoad;

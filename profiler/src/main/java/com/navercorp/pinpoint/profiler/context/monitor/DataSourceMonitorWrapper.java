@@ -22,11 +22,13 @@ import com.navercorp.pinpoint.common.trace.ServiceType;
 import java.lang.ref.WeakReference;
 
 /**
+ * todo 为什么要包装这么一层？
  * @author Taejin Koo
  */
 public class DataSourceMonitorWrapper implements PluginMonitorWrapper, DataSourceMonitor {
 
     private final int id;
+    //gc时，无论内存是否足够，都会回收WeakReference
     private final WeakReference<DataSourceMonitor> monitorReference;
 
     private volatile ServiceType serviceType;

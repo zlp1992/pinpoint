@@ -26,6 +26,7 @@ import com.navercorp.pinpoint.profiler.monitor.metric.datasource.DataSourceMetri
 import com.navercorp.pinpoint.profiler.monitor.metric.datasource.DataSourceMetricSnapshot;
 
 /**
+ *数据源指标收集器provider
  * @author Taejin Koo
  * @author HyunGil Jeong
  */

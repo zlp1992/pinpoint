@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.monitor.collector;
 
 /**
+ * agent状态指标收集器
  * @author HyunGil Jeong
  */
 public interface AgentStatMetricCollector<T> {

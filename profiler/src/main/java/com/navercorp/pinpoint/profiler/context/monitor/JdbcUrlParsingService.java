@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.common.trace.ServiceType;
 
 
 /**
+ * jdbc url 解析服务，通过url解析数据库信息
  * @author Taejin Koo
  */
 public interface JdbcUrlParsingService {

@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 数据源指标快照
  * @author jaehong.kim
  */
 public class DataSourceMetricSnapshot {

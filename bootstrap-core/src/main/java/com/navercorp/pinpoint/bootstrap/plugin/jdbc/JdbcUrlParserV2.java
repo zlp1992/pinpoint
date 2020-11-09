@@ -20,6 +20,7 @@ import com.navercorp.pinpoint.bootstrap.context.DatabaseInfo;
 import com.navercorp.pinpoint.common.trace.ServiceType;
 
 /**
+ * jdbc url解析器V2
  * @author Taejin Koo
  */
 public interface JdbcUrlParserV2 {

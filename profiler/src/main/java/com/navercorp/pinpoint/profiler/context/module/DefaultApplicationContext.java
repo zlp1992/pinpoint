@@ -214,6 +214,7 @@ public class DefaultApplicationContext implements ApplicationContext {
 
         this.deadlockMonitor.start();
         this.agentInfoSender.start();
+        //agent状态监控，db、jvm等
         this.agentStatMonitor.start();
     }
 

@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.bootstrap.plugin.monitor;
 import com.navercorp.pinpoint.common.trace.ServiceType;
 
 /**
+ * 数据源监控
  * @author Taejin Koo
  */
 public interface DataSourceMonitor {

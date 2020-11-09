@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * agent状态信息收集任务
  * @author Woonduk Kang(emeroad)
  */
 public class CollectJob implements Runnable {
@@ -92,6 +93,7 @@ public class CollectJob implements Runnable {
         // So create new list.
         this.agentStats = new ArrayList<AgentStatMetricSnapshot>(numCollectionsPerBatch);
         logger.trace("collect agentStat:{}", agentStatBatch);
+        //批量发送
         dataSender.send(agentStatBatch);
     }
 }

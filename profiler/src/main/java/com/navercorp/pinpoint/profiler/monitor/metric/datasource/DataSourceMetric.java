@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.profiler.monitor.metric.datasource;
 import java.util.List;
 
 /**
+ * 数据源指标
  * @author Taejin Koo
  * @author HyunGil Jeong
  */

@@ -36,6 +36,7 @@ import java.util.concurrent.RejectedExecutionException;
 import static com.navercorp.pinpoint.grpc.MessageFormatUtils.debugLog;
 
 /**
+ * grpc方式stat数据sender
  * @author jaehong.kim
  */
 public class StatGrpcDataSender extends GrpcDataSender {

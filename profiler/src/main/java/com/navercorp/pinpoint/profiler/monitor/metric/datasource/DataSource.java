@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.monitor.metric.datasource;
 
 /**
+ * 数据源
  * @author Woonduk Kang(emeroad)
  */
 public class DataSource {

@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.common.trace.ServiceType;
 import java.util.List;
 
 /**
+ * 数据库信息
  * @author emeroad
  */
 public interface DatabaseInfo {

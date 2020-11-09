@@ -33,6 +33,7 @@ import com.navercorp.pinpoint.profiler.monitor.metric.totalthread.TotalThreadMet
 import com.navercorp.pinpoint.profiler.monitor.metric.transaction.TransactionMetricSnapshot;
 
 /**
+ * agent状态收集器（汇总了jvm、datasource等）
  * @author HyunGil Jeong
  */
 public class AgentStatCollector implements AgentStatMetricCollector<AgentStatMetricSnapshot> {

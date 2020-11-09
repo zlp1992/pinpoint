@@ -17,6 +17,7 @@
 package com.navercorp.pinpoint.profiler.context.monitor;
 
 /**
+ * 插件监控包装类
  * @author Taejin Koo
  */
 public interface PluginMonitorWrapper {

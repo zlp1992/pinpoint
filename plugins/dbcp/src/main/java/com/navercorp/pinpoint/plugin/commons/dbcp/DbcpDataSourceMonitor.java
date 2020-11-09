@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.common.trace.ServiceType;
 import org.apache.commons.dbcp.BasicDataSource;
 
 /**
+ * dbcp数据源监控
  * @author Taejin Koo
  */
 public class DbcpDataSourceMonitor implements DataSourceMonitor {

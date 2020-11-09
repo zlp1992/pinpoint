@@ -21,6 +21,7 @@ import com.navercorp.pinpoint.bootstrap.plugin.monitor.DataSourceMonitor;
 import com.navercorp.pinpoint.common.trace.ServiceType;
 
 /**
+ * druid数据源监控
  * The type Druid data source monitor.
  *
  * @author Victor.Zxy

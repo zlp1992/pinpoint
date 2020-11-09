@@ -37,7 +37,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * AgentStat monitor
- *
+ * 默认agent状态监控，监控诸如数据源、jvm等信息
  * @author harebox
  * @author hyungil.jeong
  */

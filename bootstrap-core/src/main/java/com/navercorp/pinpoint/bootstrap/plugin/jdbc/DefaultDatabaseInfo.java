@@ -29,7 +29,7 @@ public class DefaultDatabaseInfo implements DatabaseInfo {
     private final ServiceType type;
     private final ServiceType executeQueryType;
     private final String databaseId;
-    private final String realUrl; // URL BEFORE refinement
+    private final String realUrl; // URL BEFORE refinement（优化）
     private final String normalizedUrl;
     private final List<String> host;
     private final String multipleHost;
