@@ -27,6 +27,7 @@ public class DefaultApiMetaDataService implements ApiMetaDataService {
 
     private final SimpleCache<String> apiCache;
 
+    //@MetadataDataSender metadata数据发送者
     private final EnhancedDataSender<Object> enhancedDataSender;
 
     public DefaultApiMetaDataService(EnhancedDataSender<Object> enhancedDataSender, SimpleCache<String> apiCache) {

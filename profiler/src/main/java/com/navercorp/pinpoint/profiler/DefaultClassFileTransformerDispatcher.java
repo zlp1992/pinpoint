@@ -25,6 +25,7 @@ import com.navercorp.pinpoint.profiler.instrument.transformer.TransformerRegistr
 
 
 /**
+ * class file transformer 分发器
  * @author emeroad
  * @author netspider
  * @author jaehong.kim

@@ -29,6 +29,9 @@ import java.util.List;
  */
 public interface PluginContextLoadResult {
 
+    /**
+     * 获取所有插件中定义的ClassFileTransformer(实质上是Transformer callback)
+     * */
     List<ClassFileTransformer> getClassFileTransformer();
 
     List<ApplicationTypeDetector> getApplicationTypeDetectorList();

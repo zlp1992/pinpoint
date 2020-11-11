@@ -28,6 +28,7 @@ import javax.annotation.PostConstruct;
 import java.util.Objects;
 
 /**
+ * agent stat 接收者配置
  * @author Taejin Koo
  */
 @Configuration

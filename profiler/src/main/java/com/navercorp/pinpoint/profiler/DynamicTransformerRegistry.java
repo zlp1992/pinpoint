@@ -21,6 +21,7 @@ import java.lang.instrument.ClassFileTransformer;
 import com.navercorp.pinpoint.bootstrap.instrument.DynamicTransformRequestListener;
 
 /**
+ * 动态transformer注册
  * @author emeroad
  */
 public interface DynamicTransformerRegistry extends DynamicTransformRequestListener {

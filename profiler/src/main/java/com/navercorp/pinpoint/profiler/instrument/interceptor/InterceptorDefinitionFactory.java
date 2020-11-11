@@ -39,6 +39,7 @@ public class InterceptorDefinitionFactory {
         this.detectHandlers = register();
     }
 
+
     public InterceptorDefinition createInterceptorDefinition(Class<?> interceptorClazz) {
         if (interceptorClazz == null) {
             throw new NullPointerException("targetInterceptorClazz");

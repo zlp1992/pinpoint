@@ -7,6 +7,7 @@ import com.navercorp.pinpoint.grpc.server.ServerOption;
 import java.util.Properties;
 
 /**
+ * grpc服务端配置
  * @author jaehong.kim
  */
 public class GrpcPropertiesServerOptionBuilder {

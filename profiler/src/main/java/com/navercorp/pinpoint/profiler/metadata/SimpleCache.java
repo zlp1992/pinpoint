@@ -32,6 +32,7 @@ public class SimpleCache<T> {
     // zero means not exist.
     private final AtomicInteger idGen;
     private final ConcurrentMap<T, Result> cache;
+    //id转换器，thrift需要zigzag转换
     private final IdTransformer idTransformer;
 
     public SimpleCache(IdTransformer idTransformer) {

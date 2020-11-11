@@ -31,6 +31,7 @@ import com.navercorp.pinpoint.profiler.interceptor.factory.ExceptionHandlerFacto
 import com.navercorp.pinpoint.profiler.metadata.ApiMetaDataService;
 
 /**
+ * 参数对下自动绑定工厂
  * @author Woonduk Kang(emeroad)
  */
 public class ObjectBinderFactory {

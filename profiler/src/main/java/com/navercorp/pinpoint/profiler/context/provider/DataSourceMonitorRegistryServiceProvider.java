@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 数据源监控注册服务provider
  * @author Woonduk Kang(emeroad)
  */
 public class DataSourceMonitorRegistryServiceProvider implements Provider<DataSourceMonitorRegistryService> {

@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.exception.PinpointException;
 import java.lang.reflect.Modifier;
 
 /**
+ * transform callback校验器
  * @author Woonduk Kang(emeroad)
  */
 public final class TransformCallbackChecker {

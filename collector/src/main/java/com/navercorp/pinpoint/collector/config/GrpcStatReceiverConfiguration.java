@@ -30,6 +30,7 @@ import java.util.Objects;
 import java.util.Properties;
 
 /**
+ * collector grpc stat接收器
  * @author Taejin Koo
  */
 @Configuration

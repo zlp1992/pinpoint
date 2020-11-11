@@ -27,6 +27,7 @@ import com.navercorp.pinpoint.profiler.monitor.metric.totalthread.TotalThreadMet
 import com.navercorp.pinpoint.profiler.monitor.metric.transaction.TransactionMetricSnapshot;
 
 /**
+ * agent stat指标快照
  * @author jaehong.kim
  */
 public class AgentStatMetricSnapshot {

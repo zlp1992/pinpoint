@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.profiler.instrument.interceptor.InterceptorDefinit
 import com.navercorp.pinpoint.profiler.objectfactory.ObjectBinderFactory;
 
 /**
+ * 字节码注入引擎组件，提供获取scope、插件定义、参数自动绑定等功能
  * @author Woonduk Kang(emeroad)
  */
 public interface EngineComponent {

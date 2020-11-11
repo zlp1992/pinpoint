@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.common.annotations.InterfaceAudience;
 import com.navercorp.pinpoint.common.annotations.InterfaceStability;
 
 /**
+ * trace上下文
  * @author emeroad
  * @author hyungil.jeong
  * @author Taejin Koo

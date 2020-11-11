@@ -62,6 +62,7 @@ public class MatchableClassFileTransformerDelegate implements MatchableClassFile
         final GuardInstrumentor guard = new GuardInstrumentor(this.profilerConfig, instrumentContext);
         try {
             // WARN external plugin api
+            //获取插件中定义的transform callback
             final TransformCallback transformCallback = transformCallbackProvider.getTransformCallback(instrumentContext, loader);
             return transformCallback.doInTransform(guard, loader, className, classBeingRedefined, protectionDomain, classfileBuffer);
         } catch (InstrumentException e) {

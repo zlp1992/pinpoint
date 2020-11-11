@@ -206,7 +206,7 @@ public class GrpcStatMessageConverter implements MessageConverter<GeneratedMessa
         return activeTraceBuilder.build();
     }
 
-    private PDataSourceList convertDataSourceList(DataSourceMetricSnapshot dataSourceMetricSnapshot) {
+    private PDataSourceList  convertDataSourceList(DataSourceMetricSnapshot dataSourceMetricSnapshot) {
         final PDataSourceList.Builder dataSourceListBuilder = PDataSourceList.newBuilder();
         for (DataSource dataSourceCollectData : dataSourceMetricSnapshot.getDataSourceList()) {
             PDataSource.Builder dataSourceBuilder = PDataSource.newBuilder();

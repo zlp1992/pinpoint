@@ -49,6 +49,7 @@ public class JarProfilerPluginClassInjector implements ClassInjector {
         this.plainClassLoaderHandler = new PlainClassLoaderHandler(pluginConfig);
     }
 
+    //加载分析插件class
     @Override
     @SuppressWarnings("unchecked")
     public <T> Class<? extends T> injectClass(ClassLoader classLoader, String className) {

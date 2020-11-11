@@ -22,6 +22,7 @@ import com.navercorp.pinpoint.bootstrap.interceptor.scope.ExecutionPolicy;
 import com.navercorp.pinpoint.bootstrap.interceptor.scope.InterceptorScope;
 
 /**
+ * scope工厂
  * @author Woonduk Kang(emeroad)
  */
 public class ScopeFactory {

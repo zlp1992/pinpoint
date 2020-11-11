@@ -28,7 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 默认字节码转换注册器
+ * 默认动态字节码转换注册器
  * */
 public class DefaultDynamicTransformerRegistry implements DynamicTransformerRegistry {
 

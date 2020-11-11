@@ -57,6 +57,9 @@ public class GrpcReceiver implements InitializingBean, DisposableBean, BeanNameA
     private ServerFactory serverFactory;
     private Executor executor;
 
+    /**
+     * 处理接收数据的service列表
+     * */
     private List<Object> serviceList = new ArrayList<>();
 
     private AddressFilter addressFilter;

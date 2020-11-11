@@ -30,6 +30,7 @@ import java.util.Objects;
 import java.util.Properties;
 
 /**
+ * collector grpc span接收器
  * @author Taejin Koo
  */
 //@ConfigurationProeprties(prefix=GRPC_PREFIX) spring-boot

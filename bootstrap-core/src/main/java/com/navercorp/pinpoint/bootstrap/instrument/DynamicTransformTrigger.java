@@ -19,6 +19,7 @@ package com.navercorp.pinpoint.bootstrap.instrument;
 import java.lang.instrument.ClassFileTransformer;
 
 /**
+ * class动态转换触发器
  * @author emeroad
  */
 public interface DynamicTransformTrigger {
